@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+h1,h3{
+    text-align: center;
+    color: aliceblue;
+}
+
+h3{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.switch{
+    height: 10rem;
+    width: 10rem;
+    margin: 0.2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    position: relative; /* Added position property */
+    z-index: 1;
+}
+
+.red{
+    background-color: darkcyan;
+    border-radius: 30px 30px 0  ;
+    position: relative;
+    z-index: 1;
+}
+
+.purple{
+    background-color: purple;
+    border-radius: 30px 0 30px 30px ;
+    position: relative;
+    z-index: 1;
+}
+
+.green{
+    background-color: darkkhaki;
+    border-radius: 30px 30px 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.silver{
+    background-color: silver;
+    border-radius: 0 30px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.branch{
+    height: 29rem;
+    width: 1.3rem;
+    background-color: brown;
+    position: relative;
+    top: -10.8rem;
+    right: -45.3rem;
+    border-radius:20px 20px 0 0 ;
+    z-index: 0;
+}
+
+.circle{
+    height: 3rem;
+    width: 3rem;
+    background-color: yellow;
+    border-radius: 100%;
+    position: relative;
+    top: 12rem;
+    left: 44.4rem;
+    z-index: 2;
+}
+
+.leaf{
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 200px 0;
+    position: relative;
+    left: 48.7rem;
+    bottom: 19rem;
+}
+
+.black{
+    height: 1rem;
+    width: 1rem;
+    background-color: #000;
+    position: relative;
+}
+
+.flash{
+    background-color: #fff;
+}
+
+.userflash{
+    background-color: gold;
+}
+
+.fail{
+    background-color: red;
+}
+
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(45deg); /* Start from the initial rotation */
+    }
+    100% {
+        transform: rotate(405deg); /* Complete the rotation (360deg + initial 45deg) */
+    }
+}
+
+.rotate {
+    animation: rotateAnimation 2s linear infinite; /* Rotate continuously */
+}
